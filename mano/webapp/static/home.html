@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            box-sizing: border-box;
+        }
+
+        *, *::before, *::after {
+            box-sizing: inherit;
+        }
+
+        header {
+            background: white;
+            color: #000000;
+            padding: 5px 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 80px;
+        }
+
+        header nav a {
+            padding-right: 10px;
+            text-decoration: none;
+            color: #b90b0b;
+            font-weight: bold;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
+
+        header nav a:hover {
+            color: #ff5722;
+        }
+
+        .banner {
+            background-size: cover;
+            margin: 1% 2%;
+            border-radius: 37px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 30px 20px;
+            background: rgb(67, 69, 71);
+            color: white;
+            height: 250px;
+            text-align: center;
+        }
+
+        .banner-content {
+            max-width: 50%;
+        }
+
+        .banner-content h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .banner-content p {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+
+        footer {
+            background: white;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 100px;
+            font-size: larger;
+        }
+
+        @media (max-width: 768px) {
+            .banner {
+                flex-direction: column;
+                height: auto;
+                text-align: center;
+            }
+
+            .banner-content {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>RAAYAN FOODIE HUB</h1>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="contact.html">Contact</a>
+            <a href="admin.html" class="active">Admin</a>
+        </nav>
+    </header>
+    <div class="logo">
+        <center><img src="dhanush.jpeg" height="350px" width="350px"></center>
+    </div>
+    <div class="banner">
+        <div class="banner-content">
+            <h1>Welcome To "Dhanush grand food park"</h1>
+            <p>Where every flavor tells a story.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>Designed by: R.Manobala(25016414)</p>
+    </footer>
+
+</body>
+</html>

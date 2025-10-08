@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            box-sizing: border-box;
+        }
+
+        *, *::before, *::after {
+            box-sizing: inherit;
+        }
+
+        header {
+            background: #4CAF50;
+            color: #ffffff;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 80px;
+        }
+
+        header nav a {
+            padding: 10px 15px;
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: bold;
+            margin: 0 10px;
+            transition: color 0.3s ease, background 0.3s ease;
+            border-radius: 5px;
+        }
+
+        header nav a:hover {
+            background: #ff5722;
+            color: #ffffff;
+        }
+
+        .menu-container {
+            padding: 20px;
+            background: #f9f9f9;
+            text-align: center;
+        }
+
+        .menu-container h1 {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .menu-items {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .menu-item {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            width: 300px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .menu-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .menu-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .menu-details {
+            padding: 15px;
+        }
+
+        .menu-details h3 {
+            font-size: 1.5rem;
+            color: #000000;
+            margin-bottom: 8px;
+        }
+
+        .menu-details p {
+            font-size: 1rem;
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.5rem;
+            }
+
+            .menu-items {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .menu-item {
+                width: 100%;
+            }
+
+            header nav a {
+                margin: 0 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Dhanush FOODIE HUB</h1>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="contact.html">Contact</a>
+            <a href="admin.html" class="active">Admin</a>
+        </nav>
+    </header>
+
+    <div class="menu-container">
+        <h1>Menu</h1>
+        <div class="menu-items">
+            <div class="menu-item">
+                <img src="biriyani.webp" alt="Biryani">
+                <div class="menu-details">
+                    <h3>Biryani</h3>
+                    <p>Delicious spiced rice with meat.</p>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="chicken noodle.jpeg" alt="Noodles">
+                <div class="menu-details">
+                    <h3>Noodles</h3>
+                    <p>Stir-fried noodles with chicken and vegetables.</p>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="chapati.jpeg" alt="Chapathi">
+                <div class="menu-details">
+                    <h3>Chapathi</h3>
+                    <p>Soft Indian flatbread.</p>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="parotta.jpeg" alt="Parotta">
+                <div class ="menu-details">
+                    <h3>Parotta</h3>
+                    <p>Parotta is a soft,flaky South Indian flatbread made from maida.</p>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="dosa.jpeg" alt="Dosa">
+                <div class="menu-details">
+                    <h3>dosa</h3>
+                    <p>Dosa is a crispy, savory South Indian pancake made from fermented rice and lentil batter</p>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="chicken rice.jpeg" alt="Chicken Rice">
+                <div class="menu-details">
+                    <h3>Chicken Rice</h3>
+                    <p>Chicken rice is a flavorful dish made with tender chicken and spiced rice.</p>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="fish.jpeg" alt="Fish Meals">
+                <div class="menu-details">
+                    <h3>Fish Meals</h3>
+                    <p>Fish meals are a wholesome and flavorful combination of rice,curry and grilled fish.</p>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="idly.jpeg" alt="Idly">
+                <div class="menu-details">
+                    <h3>Idly</h3>
+                    <p>Idly is a soft, steamed South Indian breakfast made from fermented rice and lentil batter.</p>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="meals.jpeg" alt="Veg Meals">
+                <div class="menu-details">
+                    <h3>Veg Meals</h3>
+                    <p>Veg meals offer a wholesome combination of rice, curries, vegetables, and sides for a balanced and satisfying meal.</p>
+                </div>
+            </div>
+        
+            <div class="menu-item">
+                <img src="poori.jpeg" alt="Poori">
+                <div class="menu-details">
+                    <h3>Poori</h3>
+                    <p>Poori is a golden, puffed Indian bread made from wheat flour and deep-fried to perfection.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>Designed by: R.Manobala(25016414)</p>
+    </footer>
+    
+</body>
+</html>

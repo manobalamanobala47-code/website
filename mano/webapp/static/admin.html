@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RAAYAN Foods | Owner Dhanush</title>
+  <style>
+    /* === Global Reset === */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #fffaf3;
+      color: #3a2a20;
+      line-height: 1.6;
+    }
+
+    /* === Header === */
+    header {
+      background-color: #6b1d1d;
+      color: #f7e7ce;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      border-bottom: 4px solid #e37b40;
+    }
+
+    header h1 {
+      font-family: 'Georgia', serif;
+      font-size: 2rem;
+      letter-spacing: 1px;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    header h1::before {
+      content: "🔥";
+      font-size: 1.8rem;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    nav a {
+      color: #f7e7ce;
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav a:hover,
+    nav a.active {
+      border-bottom: 2px solid #f7e7ce;
+    }
+
+    /* === Owner Section === */
+    .owner-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 4rem 2rem;
+    }
+
+    .owner-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      max-width: 600px;
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+      overflow: hidden;
+      border: 3px solid #e37b40;
+      padding: 2rem;
+    }
+
+    /* === Small Owner Photo === */
+    .owner-photo {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #e37b40;
+      margin-bottom: 1rem;
+    }
+
+    .owner-info h2 {
+      color: #6b1d1d;
+      font-family: 'Georgia', serif;
+      font-size: 1.8rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .owner-info h3 {
+      font-size: 1.2rem;
+      font-weight: 500;
+      color: #e37b40;
+      margin-bottom: 1rem;
+    }
+
+    .owner-info p {
+      margin-bottom: 1rem;
+      font-size: 1rem;
+    }
+
+    /* === CEO Section === */
+    .ceo-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 4rem 2rem;
+    }
+
+    .ceo-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      max-width: 600px;
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+      overflow: hidden;
+      border: 3px solid #e37b40;
+      padding: 2rem;
+    }
+
+    /* === Small Ceo Photo === */
+    .ceo-photo {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #e37b40;
+      margin-bottom: 1rem;
+    }
+
+    .ceo-info h2 {
+      color: #6b1d1d;
+      font-family: 'Georgia', serif;
+      font-size: 1.8rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .ceo-info h3 {
+      font-size: 1.2rem;
+      font-weight: 500;
+      color: #e37b40;
+      margin-bottom: 1rem;
+    }
+
+    .ceo-info p {
+      margin-bottom: 1rem;
+      font-size: 1rem;
+    }
+
+    /* === Social Links === */
+    .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .social-links img {
+      width: 32px;
+      height: 32px;
+      transition: 0.3s;
+      filter: sepia(40%) hue-rotate(-10deg);
+    }
+
+    .social-links img:hover {
+      transform: scale(1.1);
+      filter: none;
+    }
+
+    /* === Footer === */
+    footer {
+      background-color: #6b1d1d;
+      color: #f7e7ce;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      border-top: 4px solid #e37b40;
+    }
+
+    /* === Responsive === */
+    @media (max-width: 768px) {
+      .owner-card {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>RAAYAN Foods</h1>
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="admin.html" class="active">Admin</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Owner Section -->
+  <section class="owner-section">
+    <div class="owner-card">
+      <img src="dhanush.jpeg" alt="Owner Dhanush" class="owner-photo">
+
+      <div class="owner-info">
+        <h2>Meet the Owner</h2>
+        <h3>Dhanush</h3>
+        
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ceo Section -->
+  <section class="ceo-section">
+    <div class="ceo-card">
+      <img src="ceo.jpeg" alt="CEO Vikram" class="ceo-photo">
+
+      <div class="ceo-info">
+        <h2>Meet the CEO</h2>
+        <h3>Vikram</h3>
+        
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 RAAYAN Foods | All Rights Reserved</p>
+  </footer>
+</body>
+</html>
